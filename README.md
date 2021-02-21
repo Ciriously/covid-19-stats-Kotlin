@@ -16,7 +16,7 @@ This application displays the latest updates based on numbers from https://www.c
 - Android Architecture Component
 
 # Credits
-Thanks to [COVID19India.org](https://github.com/covid19india/api) for open-source API.
+Thanks to [COVID19India.org] (https://github.com/covid19india/api) for open-source API.
 
 # manager
 Managed by 
