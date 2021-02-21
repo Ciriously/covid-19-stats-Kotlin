@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav_first_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_selector"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/bell_selector"
+            android:title="@string/notification" />
+
+        <item
+            android:id="@+id/state_list"
+            android:icon="@drawable/map_selector"
+            android:title="@string/state_ut" />
+
+        <item
+            android:id="@+id/essentials"
+            android:icon="@drawable/search_selector"
+            android:title="@string/essentials" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/info_selector"
+            android:title="@string/about" />
+
+    </group>
+</menu>

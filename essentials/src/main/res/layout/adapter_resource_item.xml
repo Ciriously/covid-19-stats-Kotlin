@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="info.covid.data.enities.Resources" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?defaultMargin"
+        android:background="@drawable/state_item_bg"
+        android:padding="?defaultMarginMed">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.category}"
+            style="?textAppearanceSubtitle1"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?defaultMarginMin"
+            android:text="@{viewModel.description}"
+            style="?textAppearanceSubtitle3"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/category" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:lineSpacingExtra="?defaultMarginMed"
+            android:paddingVertical="?defaultMarginMin"
+            android:text="@{viewModel.phonenumber}"
+            style="?textAppearanceSubtitle2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/desc" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:paddingVertical="?defaultMarginMin"
+            android:singleLine="true"
+            android:text="@{viewModel.contact}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/number" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?defaultMarginMin"
+            android:text="@{viewModel.getAddress()}"
+            style="?textAppearanceSubtitle3"
+            android:textStyle="italic|bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/link" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

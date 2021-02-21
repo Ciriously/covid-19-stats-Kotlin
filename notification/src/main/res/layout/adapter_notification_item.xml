@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="info.covid.data.models.Notification" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="?defaultMarginMed">
+
+        <View
+            android:id="@+id/dot"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="?defaultMarginMin"
+            android:layout_marginHorizontal="?defaultMarginMed"
+            android:background="@drawable/dot" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/time"
+                style="?textAppearanceSubtitle2"
+                relativeTime="@{viewModel.timestamp}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="?defaultMarginMed"
+                android:includeFontPadding="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/update"
+                style="?textAppearanceHeadline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="?defaultMarginMed"
+                android:layout_marginTop="?defaultMarginMin"
+                android:includeFontPadding="false"
+                android:text="@{viewModel.update}" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

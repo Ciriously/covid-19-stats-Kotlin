@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion Config.compileSdk
+    buildToolsVersion Config.buildTools
+
+
+    defaultConfig {
+        applicationId Config.applicationId
+        minSdkVersion Config.minSdk
+        targetSdkVersion Config.targetSdk
+        versionCode Config.versionCode
+        versionName Config.versionName
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("covid.jks")
+            storePassword "covid@123"
+            keyAlias "covid"
+            keyPassword "covid@123"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    dataBinding{
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    applicationVariants.all { variant ->
+        variant.resValue "string", "versionName", Config.versionName
+    }
+}
+
+dependencies {
+    implementation project(":data")
+    implementation project(":essentials")
+    implementation project(":uicomponents")
+    implementation project(":notification")
+    implementation project(":state")
+    implementation project(":core")
+    implementation project(":dashboard")
+
+    implementation Deps.kotlin_stdlib
+    implementation Deps.material
+    implementation Deps.constraintLayout
+
+    implementation Deps.retrofit
+    implementation Deps.moshi
+
+    implementation Deps.fragment_ktx
+
+    implementation Deps.liveData
+
+    implementation Deps.navigation
+    implementation Deps.navigation_ui
+
+    implementation Deps.MPAndroidChart
+
+    implementation Deps.preference
+    implementation Deps.koin
+
+    implementation Deps.room
+    kapt Deps.room_compiler
+    implementation Deps.room_ktx
+
+    testImplementation Deps.junit
+    androidTestImplementation Deps.test_ext
+    androidTestImplementation Deps.espresso
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Covid-19</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="state_ut">State/UT</string>
+    <string name="essentials">Essentials</string>
+    <string name="about">About</string>
+    <string name="updates">Updates</string>
+</resources>
