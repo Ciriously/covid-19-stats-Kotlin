@@ -25,7 +25,8 @@ Thanks to [COVID19India.org] (https://github.com/covid19india/api) for open-sour
 3.Beautiful UI to elaborate our data, making it more user friendly. 
 4.A map section to display Covid cases deaths and recovery which can be Divided into smaller and smaller Regions (All data will be real time)
 5.A covid help-line page and essential page with search and filter options to help user navigate easily
-6.Dashboard displaying everything related to it
+6.Dashboard displaying everything related to it.
+App final build-3 march 2021
 
 
 
