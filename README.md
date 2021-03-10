@@ -1,3 +1,9 @@
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Ciriously)
+
+[![Generic badge](https://img.shields.io/badge/COVID-19-red.svg)](https://shields.io/)
+
+
+
 # covid-19
  Thanks to COVID19India.org for open-source API.
 
