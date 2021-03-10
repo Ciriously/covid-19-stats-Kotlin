@@ -82,7 +82,7 @@
         </PreferenceScreen>
 
         <PreferenceScreen
-            android:title="@string/source_code"
+            android:title="@string/github"
             app:icon="@drawable/ic_github">
 
             <intent
