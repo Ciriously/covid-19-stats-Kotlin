@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/COVID-19-red.svg)](https://www.covid19india.org/)
 
-<div align="center">
+<div align="left">
   <img alt="Demo" src="./screenshots/Covid.png" />
 </div>
 
