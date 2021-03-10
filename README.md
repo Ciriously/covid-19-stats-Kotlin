@@ -1,6 +1,10 @@
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Ciriously)
 
-[![Generic badge](https://img.shields.io/badge/COVID-19-red.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/COVID-19-red.svg)](https://www.covid19india.org/)
+
+<div align="center">
+  <img alt="Demo" src="./screenshots/Covid.png" />
+</div>
 
 
 
