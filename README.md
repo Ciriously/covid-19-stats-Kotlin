@@ -1,12 +1,6 @@
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Ciriously)
+# covid_19_tracker
 
-[![Generic badge](https://img.shields.io/badge/COVID-19-red.svg)](https://www.covid19india.org/)
-
-<div align="left">
-  <img alt="Demo" src="./screenshots/Covid.png" />
-</div>
-
-
+An open-sourced Mobile application to track the COVID-19 cases made using Kotlin. Complete applicaion with neat UI and full API Integration
 
 # covid-19
  Thanks to COVID19India.org for open-source API.
