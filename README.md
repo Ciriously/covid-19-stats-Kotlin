@@ -1,8 +1,5 @@
-# covid_19_tracker
-
-An open-sourced Mobile application to track the COVID-19 cases made using Kotlin. Complete applicaion with neat UI and full API Integration
-
 # covid-19
+ An open-sourced Mobile application to track the COVID-19 cases made using Kotlin. Complete applicaion with neat UI and full API Integration
  Thanks to COVID19India.org for open-source API.
 
 # COVID-19 Tracker Android Application
