@@ -87,7 +87,7 @@
 
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://github.com/CiriouslyGallery" />
+                android:data="https://github.com/Ciriously" />
 
         </PreferenceScreen>
 
