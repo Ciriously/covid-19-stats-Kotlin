@@ -1,4 +1,4 @@
-Meet Mewada
+
 A simple Android app to track COVID-19 cases in India.
 The data we provide is collected from
 [Ministry of Health and Family Welfare(mohfw)](https://www.mohfw.gov.in/).
